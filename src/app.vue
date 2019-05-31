@@ -1,7 +1,7 @@
 <template>
   <el-carousel :interval="4000" type="card" height="156px">
-    <el-carousel-item v-for="item in items" :key="item" @click="openUrl(item.url)">
-      <img :src="item.img" />
+    <el-carousel-item v-for="item in items" :key="item">
+      <img :src="item.img" @click="openUrl(item.url)"/>
       <p>{{item.title}}</p>    
     </el-carousel-item>
   </el-carousel>
@@ -45,6 +45,9 @@ export default {
   mounted(){
   },
   methods: {
+    openUrl(url){
+      window.open(url);
+    }
   }
 }
 </script>
