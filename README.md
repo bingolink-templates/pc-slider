@@ -1,6 +1,6 @@
-# widget-template
+# widget-slider
 
-> 轮播图
+> PC轮播图
 
 ## 安装
 ``` bash
