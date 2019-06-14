@@ -24,7 +24,7 @@ function getImageUrl(resourceUrl, accessToken) {
 module.exports = {
     getCarouselList(success, error){
         app.linkplugin.ajax({
-            url: window.env.comwidgetsUri + '/carousel?limit=5&offset=0',
+            url: window.env.comwidgetsUri + '/carousel/list?limit=5&offset=0',
             success: function(res){
                 app.linkplugin.getAccessToken(function(at){
                     var datas = res.data;
