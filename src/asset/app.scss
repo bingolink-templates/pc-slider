@@ -4,8 +4,9 @@
 
 .el-carousel{
     height: 200px;
-    margin-top: 15px; 
+    padding-top: 15px; 
     background-color: #FFF;
+    overflow-y: hidden;
 }
 
 .el-carousel__item{
