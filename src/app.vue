@@ -26,6 +26,9 @@ export default {
   created(){
     apiSer.appendStyle();
     this.getDatas();
+    app.linkplugin.listenRefreshWidgetData(() => {
+      this.getDatas();
+    });
   },
   mounted(){
   },
