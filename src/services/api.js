@@ -25,7 +25,7 @@ module.exports = {
     getCarouselList(success, error){
         app.linkplugin.ajax({
             url: window.env.comwidgetsUri + '/carousel/list?limit=5&offset=0',
-            success: function(res){
+            success: function (res) {
                 app.linkplugin.getAccessToken(function(at){
                     var datas = res.data;
                     util.each(datas, function(item){
