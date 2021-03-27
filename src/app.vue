@@ -1,6 +1,6 @@
 <template>
   <el-carousel :interval="4000" type="card" height="156px" v-if="items.length>0">
-    <el-carousel-item v-for="item in items" :key="item">
+    <el-carousel-item v-for="(item,index) in items" :key="index">
       <img :src="item.img" @click="openUrl(item)" onerror="javascript:this.src='static/pic-err.png'"/>
       <p>{{item.title}}</p>    
     </el-carousel-item>
